@@ -1,0 +1,460 @@
+@media  only screen and (max-width: 1285px) {
+    /* MAIN SECTION  */
+    .main {
+        width: 100%;
+        height: 100vh;
+    }
+    .main > img {
+        height: inherit;    
+    }
+    .sec_50:first-child img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    /* BOOK TABLE  */
+    .book_table {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    
+    /* MAIN SECTION  */
+    .sec_50:nth-child(2) {
+        text-align: right;
+        margin-right: 50px;
+        position: relative;
+        top: -5rem;
+    }
+    
+    .book_table {
+        bottom: 10px;
+        width: 30%;
+        padding: 5px 0;
+        padding-right: 5rem;
+    }
+
+    /* ABOUT SECTION  */
+    .about__section > img {
+        margin-left: -200px;
+    }
+
+    /* FOOD QUALITY SECTION  */
+    .food_content .title h1 {
+        margin: auto 10px;
+    }
+
+    /* GALLERY SECTION  */
+    .gallery_content {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* BOOKING SECTION  */
+    .form_section form {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 970px)
+{
+    /* ABOUT SECTION  */
+    .about_content p {
+        padding: 0 50px;
+    }
+
+    /* BOOKING SECTION  */
+    .booking_content {
+        padding-top: 50px;
+        padding-bottom: 0;
+        padding: 50px 0 0 0;
+    }
+
+    label {
+        text-align: center;
+    }
+
+    .form_section form {
+        padding: 0 60px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    form input, select {
+    margin-bottom: 2rem;
+    }
+
+    .submit {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 912px)
+{
+    /* NAVBAR  */
+    /* open button */
+    .open_button {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        color: rgba(204, 203, 203, 0.884);
+        border: none;
+        background: transparent;
+        font-size: 40px;
+        z-index: 444;
+    }
+    
+    .navbar {
+        background: #141414;
+        position: absolute;
+        right: -100vw;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 60px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 20px;
+        opacity: 0.9;
+        z-index: 3333;
+        margin: 0;
+        transition: 1s all ease-in-out;
+    }
+    .navbar a {
+        margin: 15px;
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid white;
+    }
+    .last {
+        order: 8;
+    }
+
+    /* close button  */
+    .navbar button {
+        background: transparent;
+        border: none;
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 2rem;
+    }
+    .fa-xmark {
+        color: white;
+        font-size: 30px;
+    }
+
+    /* MAIN SECTION  */
+    .main {
+        overflow: hidden;
+    }
+    .sec_50:first-child img {
+        width: 100%;
+        filter: opacity(0.3);
+    }
+
+    .sec_50:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sec_50:nth-child(2) img {
+        margin-bottom: 0;
+    }
+    .book_table {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* ABOUT SECTION  */
+    .about__section > img {
+        margin-left: -400px;
+    }
+
+    /* FOOD QUALITY SECTION  */
+    .food_content {
+        width: 60%;
+        right:2rem;
+    }
+}
+
+@media only screen and (max-width: 879px)
+{
+    /* ABOUT SECTION  */
+    .about__section {
+        height: 663px;
+        width: 100%;
+    }
+    .about__section img {
+        opacity: 0.4;
+    }
+    .about_content {
+        width: 100%;
+    }
+    .about_content p {
+        padding: 0 10rem;
+    }
+    .title h1 {
+        margin: 0;
+    }
+
+    /* FOOD QUALITY SECTION  */
+    .food_image img {
+        opacity: 0.4;
+    }
+    .food_content {
+        width: 100%;
+        top: 50%;
+        right: auto;
+        transform: translateY(-50%);
+    }
+
+    /* GALLERY SECTION  */
+    .gallery__section > img {
+        height: 100vh;
+    }
+    .gallery_content {
+        padding: 0 50px;
+    }
+
+    /* FOOTER SECTION  */
+    .footer__section ul li {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    /* MAIN SECTION  */
+    .sec_50:nth-child(2) img {
+        margin-bottom: 0;
+        width: 70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* BOOKING SECTION  */
+    .form_section form {
+        padding: auto;
+    }
+
+    /* CONTACT US SECTION  */
+    .sec_by_two {
+        width: 100%;
+    }
+    
+    .blog_plate img {
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width: 650px)
+{
+    /* ABOUT SECTION  */
+    .about_content {
+        padding: 50px auto;
+    }
+    .about_content p {
+        padding: 0 3rem;
+    }
+    .about__section > img {
+        margin-left: -600px;
+    }
+
+    /* BOOKING SECCTION  */
+    .form_section form {
+        margin-left: 40%;
+        transform: translateX(-50%);
+    }
+
+    /* TESTIMONAL SECTION  */
+    .testi_content {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 580px)
+{
+    /* MAIN SECTION  */
+    .sec_50:nth-child(2) img {
+        margin-bottom: 0;
+        width: 70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* FOOTER SECTION  */
+    .footer__section {
+        padding: 50px 10px;
+    }
+    .footer__section ul li {
+        margin: 5px;
+    }
+    .footer__section ul li a {
+        font-size: 13px;
+    }
+    .footer__section ul:nth-child(3) li {
+        list-style-type: none;
+        margin:0 10px;
+    }
+    .footer__section ul:nth-child(3) li a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    /* NAVBAR  */
+    .open_button {
+        top: 2rem;
+        right: 2rem;
+    }
+    .navbar a{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .navbar button {
+        right: 2rem;
+        top: 1rem;
+    }
+
+    /* MAIN SECTION  */
+    .text {
+        width: auto;
+    }
+    
+    .sec_50:nth-child(2) {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .book_table {
+        padding-right: 1rem;
+    }
+
+    /* FOOD QUALITY SECTION  */
+    .food_content .title h1, 
+    .food_content a h1,
+    #format-t {
+        font-size: 25px;
+    }
+
+    .food_image img {
+        width: 80%;
+    }
+
+    /* BOOKING SECTION  */
+    .form_section form {
+        margin-left: 0;
+        transform: translateX(0);
+    }
+
+    /* TESTIMONAL SECTION  */
+    .testimonal__section > img {
+        width: 70%;
+        top: -15rem;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+    /* PRE LOADER */
+    .preloader img {
+        width: 50%;
+    }
+
+    /* MAIN SECTION  */
+    .book_table a {
+        font-size: 13px;
+    }
+
+    /* ABOUT SECTION  */
+    .about_content p {
+        text-align: justify;
+        padding: 0 3rem;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    /* FOOD QUALITY SECTION  */
+    .food_content .title h1 {
+        font-size: 19px;
+    }
+
+    /* BOOKING SECTION  */
+    form input, select {
+        width: 250px;
+    }
+    select {
+        width: 275px;
+    }
+
+    /* FOOTER SECTION  */
+    .footer__section span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 385px)
+{
+    /* FOOD QUALITY SECTION  */
+    .food_content p {
+        padding: 0 50px;
+    }
+
+    /* GALLERY SECTION  */
+    .gallery__section .title h1 {
+        font-size: 20px;
+    }
+
+    /* TESTIMONAL SECTION  */
+    .testi_content p {
+        text-align: center;
+        font-size: 25px;
+        overflow: hidden;
+        height: 150px;
+        margin-top: -30px;
+    }
+
+    .sec_by_two p {
+        width: 100%;
+        PADDING: 1rem;
+    }
+}
+
+@media only screen and (max-width: 350px)
+{
+    /* TITLE STYLEING  */
+    .title h1 {
+        font-size: 20px;
+    }
+
+    /* ABOUT SECTION  */
+    .about_content a h1 {
+        font-size: 25px;
+    }
+
+    /* FOOD QUALITY SECTION  */
+    .food_content .title img {
+        width: 10%;
+    }
+
+    /* GALLERY SECTION  */
+    .gallery__section {
+        display: none;
+    }
+
+    /* BOOKING SECTION  */
+    .form_section form {
+        padding: 0px 1em;
+    }
+}

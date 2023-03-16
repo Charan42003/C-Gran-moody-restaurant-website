@@ -1,0 +1,497 @@
+* {
+    font-family: sans-serif;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+hr {
+    border: none;
+    border-top: 5px dotted #f0c105;
+    margin: 0;
+    padding:0;
+    background-color: #161515;
+}
+
+/* PRE LOADER  */
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.989);
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 555;
+}
+
+.preloader span {
+    width:  30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    border-bottom: none;
+    border-left: none;
+    margin: 20px;
+    animation: rotate 0.6s linear infinite;
+}
+
+@keyframes rotate {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* CONTAINER  */
+.container {
+    /* max-width: 1366px; */
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* DEFAULT DISPLAY FLEX PROPERTIES */
+.flex_d {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION 1  */
+.section__1 {
+    background-color: black;
+    background-image: url('images/main-background.png');
+}
+.open_button {
+    display: none;
+}
+/* NAVBAR SECTION */
+.navbar {
+    justify-content: space-evenly;
+    padding: 5PX 2rem;
+    background: #555555;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+.navbar button {
+    display: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color:rgba(204, 203, 203, 0.884)
+}
+
+
+.navbar img {
+    width: 150px;
+}
+
+/* MAIN SECTION  */
+.main {
+    padding-top: 50px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.sec_50 {
+    color: white;
+    overflow: hidden;
+    text-align: left;
+}
+
+.sec_50:first-child img {
+    width: 70%;
+}
+
+.sec_50:nth-child(2) {
+    text-align: right;
+    margin-right: 100px;
+    position: relative;
+    top: 0rem;
+}
+.sec_50:nth-child(2) img {
+    margin-bottom: 55px;
+}
+
+.text { 
+    width: 500px;
+    margin: 50px 0;
+    font-size: 15px;
+}
+
+.text h1 {
+    letter-spacing: 5px;
+}
+
+.text h1, .text h2 {
+    font-weight: 300;
+}
+
+.text a {
+    color: #ffca00;
+    text-decoration: none;
+}
+
+    /* BOOK TABLE  */
+.book_table {
+    width: 65%;
+    padding: 10px 0;
+    text-align: right;
+    padding-right: 6rem;
+    color: white;
+    background: linear-gradient(to right, transparent, rgba(85, 84, 84, 0.699), rgba(85, 84, 84, 0.699));
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+.book_table a {
+    color: white;
+    text-decoration: none;
+}
+.book_table a h1 span {
+    color: #f0c105;
+    text-decoration: underline;
+}
+
+/* ABOUT SECTION  */
+.about__section {
+    position: relative;
+}
+
+.about_content {
+    width: 50%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about_content p {
+    text-align: center;
+    line-height: 30px;
+    padding: 0 100px;
+}
+.about_content a {
+    color: white;
+    text-decoration: none;
+}
+.about_content a h1 {
+    font-weight: 300;
+}
+.about_content a h1 span {
+    color: #f0c105;
+    text-decoration: underline;
+}
+
+.title h1 {
+    color: white;
+    margin: auto 50px;
+    font-weight: 300;
+}
+
+/* FOOD QUALITY SECTION  */
+.foodQuality__section {
+    position: relative;
+}
+.foodQuality__section > img {
+    position: relative;
+    width: 100%;
+    height: 663px;
+}
+
+/* .food_content {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 0 !important;
+} */
+.food_content {
+    width: 50%;
+    height: 80%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.food_content p {
+    text-align: center;
+    line-height: 30px;
+    padding: 0 100px;
+}
+.food_content a {
+    color: white;
+    text-decoration: none;
+}
+.food_content a h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+.food_content a h1 span {
+    color: #f0c105;
+    text-decoration: underline;
+}
+.food_content a h4 {
+    font-weight: 100;
+    font-size: 20px;
+    color: #f0c105;
+    text-align: center;
+}
+#format-t {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.food_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.food_image img {
+    width: 65%;
+}
+
+/* GALLERY SECTION  */
+.gallery__section {
+    position: relative;
+}
+
+.gallery__section > img {
+    position: relative;
+}
+
+.gallery_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 150px 20px;
+    text-align: center;
+}
+.gallery_content > img {
+    width: 90%;
+}
+
+/* BOOKING SECTION  */
+.booking__section {
+    position: relative;
+    text-align:center;
+}
+.booking__section > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.booking_content {
+    position: relative;
+    z-index: 333;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    color: white;
+    padding: 100px;
+}
+.booking_content > p {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 60px auto 70px auto;
+}
+
+.form_section {
+    width: 100%;
+}
+
+
+label {
+    color: rgba(204, 203, 203, 0.884);
+    font-size: 20px;
+    text-align: left;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+.form_section form {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+form input, select {
+    width: 300px;
+    height: 35px;
+    border: 1px solid #f0c105;
+    border-radius: 5px;
+    background: transparent;
+    padding-left: 20px;
+    outline: none;
+    color: rgba(204, 203, 203, 0.884);
+    margin-bottom: 3rem;
+}
+select {
+    width: 325px;
+    height: 37px;
+}
+select option {
+    background: black;
+}
+input::placeholder {
+    color: rgba(204, 203, 203, 0.884);
+}
+#date::-webkit-calendar-picker-indicator {
+    background: #f0c105;
+    margin-right: 20px;
+}
+.sec_half {
+    display: grid;
+}
+.submit {
+    padding: 10px 60px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ffca00;
+}
+.submit:hover {
+    background-color: #f0c105d3;
+    cursor: pointer;
+}
+
+/* IMAGE SHOW SECTION  */
+.image__section > img {
+    position: relative;
+    z-index: 333;
+    width: 100%;
+}
+
+/* TESTIMONAL SECTION  */
+.testimonal__section {
+    position: relative;
+    background: #141414;
+    padding: 50px 0;
+    text-align: center;
+    margin: 0;
+}
+.testimonal__section > img {
+    position: absolute;
+    top: -20rem;
+    right: 0;
+    z-index: 1;
+}
+.testi_content {
+    color: white;
+    padding: 0 10rem;
+    position: relative;
+    z-index: 333;
+}
+.testi_content span {
+    font-size: 100px;
+    color: #f0c105;
+}
+
+.testi_content p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+.testi_content h2 {
+    font-weight: 100;
+    color: #f0c105;
+    font-size: 30px;
+}
+
+/* CONTACT US SECTION  */
+.contact__section {
+    position: relative;
+    z-index: 333;
+    padding: 50px 0;   
+    background: #161515;
+    color: white;
+}
+
+.sec_by_two {
+    width: 50%;
+    text-align: center;
+}
+
+
+.sec_by_two h1 {
+    color: #f0c105;
+    font-weight: 100;
+}
+.sec_by_two p {
+    width: 50%;
+    line-height: 25px;
+    text-align: center;
+    margin: 30px auto;
+}
+.sec_by_two a {
+    text-decoration: none;
+}
+.sec_by_two a h1 {
+    font-size: 20px;
+}
+
+/* FOOTER SECTION  */
+.footer__section {
+    margin: 0;
+    position: relative;
+    background-color: #161515;
+    padding: 50px;
+    text-align: center;
+}
+.footer__section img {
+    width: 200px;
+}
+.footer__section ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer__section ul li {
+    list-style-type: none;
+    margin: 30px;
+}
+.footer__section ul:nth-child(3) li {
+    list-style-type: none;
+    margin:0 30px;
+    padding: none;
+}
+.footer__section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer__section ul:nth-child(3) li a {
+    font-size: 30px;
+}
+.footer__section ul li a:hover {
+    color: rgba(204, 203, 203, 0.884)
+}
