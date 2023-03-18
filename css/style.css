@@ -474,6 +474,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 .footer__section ul li {
     list-style-type: none;
